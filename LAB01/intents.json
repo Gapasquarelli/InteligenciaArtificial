@@ -1,15 +1,19 @@
 {"intents":[
   { "tag": "saudacao",
     "patterns":["Ola","Opa","Oi", "tudo bem","Olá"],
-    "responses": ["Oi","Olá"]
+    "responses": ["Olá!"]
   },
   { "tag": "despedida",
-    "patterns":["valeu","tchau","Obrigado","tks","obrigada","Não"],
-    "responses": ["Até breve","Falou"]
+    "patterns":["valeu","tchau","Obrigado","tks","obrigada","Não","nao"],
+    "responses": ["Até mais!"]
   },
   {"tag": "nome",
-    "patterns":["Qual seu nome?","Qual o seu nome?"],
+    "patterns":["Qual seu nome?","Qual o seu nome?", "como posso te chamar?", "como você se chama?", "quem é você?","Como posso chamar você?"],
     "responses": ["Meu nome é Chatbot"]
+  },
+  {"tag": "objetivo_chatbot",
+    "patterns":["Por quê você está aqui?","Qual seu objetivo chatbot?", "Qual seu propósito?", "No que você pode me ajudar?", "Em que você pode me ajudar?"],
+    "responses": ["Estou aqui para informar e tirar qualquer dúvida que você possa ter em relação ao PIPE da FAPESP"]
   },
   {"tag": "PIPE",
   "patterns":["O que e o PIPE?","Como funciona o PIPE?", "Me conte sobre o PIPE"],
@@ -17,11 +21,18 @@
   },
   {"tag": "objetivos_PIPE",
   "patterns":["Quais os objetivos do PIPE?","O PIPE tem objetivos?","O PIPE tem algum objetivo?", "Me conte sobre os objetivos do PIPE"],
-  "responses": ["1. Apoiar a pesquisa em ciência e tecnologia como instrumento para promover a inovação tecnológica, promover o desenvolvimento empresarial e aumentar a competitividade das pequenas empresas. 2. Incrementar a contribuição da pesquisa para o desenvolvimento econômico e social. 3. Induzir o aumento do investimento privado em pesquisa tecnológica. 4. Possibilitar que as empresas se associem a pesquisadores do ambiente acadêmico em projetos de pesquisa visando à inovação tecnológica. 5. Contribuir para a formação e o desenvolvimento de núcleos de desenvolvimento tecnológico nas empresas e para o emprego de pesquisadores no mercado."]
+  "responses": ["1. Apoiar a pesquisa em ciência e tecnologia como instrumento para promover a inovação tecnológica, promover o desenvolvimento empresarial e aumentar a competitividade das pequenas empresas.", 
+                "2. Incrementar a contribuição da pesquisa para o desenvolvimento econômico e social.", 
+                "3. Induzir o aumento do investimento privado em pesquisa tecnológica.", 
+                "4. Possibilitar que as empresas se associem a pesquisadores do ambiente acadêmico em projetos de pesquisa visando à inovação tecnológica.", 
+                "5. Contribuir para a formação e o desenvolvimento de núcleos de desenvolvimento tecnológico nas empresas e para o emprego de pesquisadores no mercado."]
   },
   {"tag": "etapas_PIPE",
   "patterns":["Quais as etapas do PIPE?","O PIPE tem etapas?","O PIPE tem alguma etapa?", "Me conte sobre as etapas do PIPE"],
-  "responses": ["a) Fase 1: é destinada à verificação da viabilidade técnico-científica da proposta, (duração de até 9 meses e orçamento de até R$ 300.000, mais Reserva Técnica e Benefícios Complementares); b) Fase 2: destina-se à execução da pesquisa propriamente dita (duração de até 24 meses e orçamento de até R$ 1.500.000, mais Reserva Técnica e Benefícios Complementares); c) PIPE Invest: Aceleração da chegada ao mercado de Projetos da Fase 2, quando houver terceira parte interessada (duração de até 24 meses e orçamento de até R$ 1.500.000); d) Fase 3: desenvolvimento comercial e industrial dos produtos, processos, sistemas e/ou serviços inovadores obtidos a partir de pesquisas anteriores realizadas pela pequena empresa sem o apoio da FAPESP ou a partir de pesquisa apoiada no âmbito do PIPE."]
+  "responses": ["a) Fase 1: é destinada à verificação da viabilidade técnico-científica da proposta, (duração de até 9 meses e orçamento de até R$ 300.000, mais Reserva Técnica e Benefícios Complementares);", 
+                "b) Fase 2: destina-se à execução da pesquisa propriamente dita (duração de até 24 meses e orçamento de até R$ 1.500.000, mais Reserva Técnica e Benefícios Complementares);", 
+                "c) PIPE Invest: Aceleração da chegada ao mercado de Projetos da Fase 2, quando houver terceira parte interessada (duração de até 24 meses e orçamento de até R$ 1.500.000);", 
+                "d) Fase 3: desenvolvimento comercial e industrial dos produtos, processos, sistemas e/ou serviços inovadores obtidos a partir de pesquisas anteriores realizadas pela pequena empresa sem o apoio da FAPESP ou a partir de pesquisa apoiada no âmbito do PIPE."]
   },
   {"tag": "fase1_obrigatoriedade",
   "patterns":["A fase 1 é obrigatória?","A fase 1 é obrigatória para todos os projetos?", "Todos os projetos precisam passar pela fase 1?", "Posso pular a fase 1?", "Posso ir direto para a fase 2?"],

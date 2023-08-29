@@ -103,7 +103,7 @@ class ChatBot:
 
         # fitting and saving the model
         hist = model.fit(np.array(train_x), np.array(train_y), epochs=200, batch_size=5, verbose=1)
-        model.save('my_model.keras', hist)
+        model.save('chatbot_model.h5', hist)
 
         self.model = model
 
@@ -152,16 +152,23 @@ class ChatBot:
         return return_list
 
     def getResponse(self, ints, intents_json):
+        results = []
         tag = ints[0]['intent']
         list_of_intents = intents_json['intents']
         for i in list_of_intents:
             if(i['tag']== tag):
-                ######### print("achou tag %s"%(tag))
-                result = random.choice(i['responses'])
+                for result in i['responses']:
+                    results.append(result)
                 break
-        return result
+        return results
 
     def chatbot_response(self, msg):
         ints = self.predict_class(msg, self.model)
         res = self.getResponse(ints, self.intents)
         return res, ints
+    
+    def multiple_response(self, intent):
+        if intent == "etapas_PIPE":
+            print("O PIPE possui 4 etapas, sendo elas:\n")
+        if intent == "objetivos_PIPE":
+            print("O PIPE tem 5 principais objetivos, sendo eles:\n")
