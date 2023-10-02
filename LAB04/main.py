@@ -10,39 +10,63 @@ simulations = []
 
 regr2_sim1 = MLPRegressor(hidden_layer_sizes=(70,40),max_iter=18000,activation='relu',solver='adam',learning_rate='adaptive',n_iter_no_change=600)
 simulations.append(regr2_sim1)
+#media:  0.059728857195775274
+#desvio:  0.0008117665640323996
 
 regr2_sim2 = MLPRegressor(hidden_layer_sizes=(50,40),max_iter=18000,activation='relu',solver='adam',learning_rate='adaptive',n_iter_no_change=600)
 simulations.append(regr2_sim2)
+#media:  0.06000919212219362
+#desvio:  0.0008652748094478276
 
 regr2_sim3 = MLPRegressor(hidden_layer_sizes=(60,30),max_iter=18000,activation='relu',solver='adam',learning_rate='adaptive',n_iter_no_change=600)
 simulations.append(regr2_sim3)
+#media:  0.06022084145511443
+#desvio:  0.00047134491250183717
 
 regr3_sim1 = MLPRegressor(hidden_layer_sizes=(50,40,20),max_iter=30000,activation='relu',solver='adam',learning_rate='adaptive',n_iter_no_change=800)
 simulations.append(regr3_sim1)
+#media:  0.28333590412559123
+#desvio:  0.006460540189092581
 
 regr3_sim2 = MLPRegressor(hidden_layer_sizes=(80,70),max_iter=30000,activation='relu',solver='adam',learning_rate='adaptive',n_iter_no_change=800)
 simulations.append(regr3_sim2)
+#media:  0.2874081087528498
+#desvio:  0.004330039296021476
 
 regr3_sim3 = MLPRegressor(hidden_layer_sizes=(60,50),max_iter=30000,activation='relu',solver='adam',learning_rate='adaptive',n_iter_no_change=800)
 simulations.append(regr3_sim3)
+#media:  0.28482324834953426
+#desvio:  0.00608660851722576
 
 regr4_sim1 = MLPRegressor(hidden_layer_sizes=(100,70,50),max_iter=18000,activation='relu',solver='adam',learning_rate='adaptive',n_iter_no_change=1000)
 simulations.append(regr4_sim1)
+#media:  5.217450075926991
+#desvio:  0.0655467994512969
 
 regr4_sim2 = MLPRegressor(hidden_layer_sizes=(120,60),max_iter=18000,activation='relu',solver='adam',learning_rate='adaptive',n_iter_no_change=1000)
 simulations.append(regr4_sim2)
+#media:  5.751197316490248
+#desvio:  0.2797006923104905
 
 regr4_sim3 = MLPRegressor(hidden_layer_sizes=(60,30),max_iter=18000,activation='relu',solver='adam',learning_rate='adaptive',n_iter_no_change=1000)
 simulations.append(regr4_sim3)
+#media:  17.92303050355803
+#desvio:  36.25030486484493
 
 regr5_sim1 = MLPRegressor(hidden_layer_sizes=(70,40),max_iter=10000,activation='relu',solver='adam',learning_rate='adaptive',n_iter_no_change=700)
 simulations.append(regr5_sim1)
+#media:  4271.189907357826
+#desvio:  219.44642016767932
 
 regr5_sim2 = MLPRegressor(hidden_layer_sizes=(70,40),max_iter=10000,activation='relu',solver='adam',learning_rate='adaptive',n_iter_no_change=700)
 simulations.append(regr5_sim2)
+#media:  4400.418540802745
+#desvio:  274.8146478227021
 
 regr5_sim3 = MLPRegressor(hidden_layer_sizes=(70,40),max_iter=10000,activation='relu',solver='adam',learning_rate='adaptive',n_iter_no_change=700)
 simulations.append(regr5_sim3)
+#media:  4350.819302325114
+#desvio:  211.2906064686795
 
 simulation_paths = {
     regr2_sim1: './imagens/teste2/sim1',
@@ -106,7 +130,7 @@ for i in simulations:
         plt.plot(x,y,linewidth=1,color='yellow')
         plt.plot(x,y_est,linewidth=2)
 
-        plt.savefig(f'{simulation_paths[regr]}/E{j}.png')
+        #plt.savefig(f'{simulation_paths[regr]}/E{j}.png')
 
     media = media / 10
 
