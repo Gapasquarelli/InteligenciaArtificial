@@ -4,7 +4,7 @@
     "responses": ["Olá!"]
   },
   { "tag": "despedida",
-    "patterns":["valeu","tchau","Obrigado","tks","obrigada","Não","nao"],
+    "patterns":["valeu","tchau","Obrigado","tks","obrigada","Não","nao","Não, obrigado!"],
     "responses": ["Até mais!"]
   },
   {"tag": "nome",
