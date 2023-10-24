@@ -10,6 +10,7 @@ myChatBot.createModel()
 
 
 print("Bem vindo ao Chatbot")
+print("teste")
 
 
 pergunta = input("Como posso te ajudar?\n")
