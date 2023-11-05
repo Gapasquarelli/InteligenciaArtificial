@@ -8,4 +8,6 @@ Parametros utilizados:
 a = img_gray.max()
 _, thresh = cv2.threshold(img_gray, a/2*1.2, a,cv2.THRESH_BINARY_INV)
 
+results: Pasta com os resultados obtidos utilizando os parametros acima.
+
 
